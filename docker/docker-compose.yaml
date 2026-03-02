@@ -4,9 +4,11 @@ services:
       context: .
     volumes:
       - ..:/app
+    ports:
+      - "3000:3000"
     working_dir: /app
     command: sleep infinity
-
+    stop_grace_period: 2s
   db:
     image: postgres:15
     environment:
@@ -15,3 +17,5 @@ services:
       POSTGRES_DB: app
     ports:
       - "5432:5432"
+    volumes:
+      - ../database/create.sql:/docker-entrypoint-initdb.d/init.sql
