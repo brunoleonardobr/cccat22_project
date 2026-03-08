@@ -1,0 +1,28 @@
+{
+  "name": "trading_plataform",
+  "version": "1.0.0",
+  "description": "Este conteúdo é parte do curso Clean Code e Clean Architecture da Branas.io",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/brunoleonardobr/cccat22_project/issues"
+  },
+  "homepage": "https://github.com/brunoleonardobr/cccat22_project#readme",
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "axios": "^1.13.6",
+    "express": "^5.2.1",
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.14",
+    "pg-promise": "^12.6.1",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0"
+  }
+}

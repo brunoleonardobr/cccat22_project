@@ -4,38 +4,13 @@
   "description": "Este conteúdo é parte do curso Clean Code e Clean Architecture da Branas.io",
   "main": "index.js",
   "scripts": {
-    "main": "ts-node src/main.ts",
+    "main": "ts-node csrc/main.ts",
+    "dev": "nodemon -L --exec ts-node lssrc/main.ts",
     "test": "jest --config jest.config.js",
     "docker:build": "docker build -t trading_plataform docker",
     "docker:run": "docker run -it -v %cd%:/app trading_plataform bash",
-    "compose:up": "docker-compose -f docker/docker-compose.yaml up -d --build",
+    "compose:up": "docker-compose -f docker/docker-compose.yaml up -d",
     "compose:down": "docker-compose -f docker/docker-compose.yaml -v down",
     "compose:exec": "docker-compose -f docker/docker-compose.yaml exec -it backend bash"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brunoleonardobr/cccat22_project.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/brunoleonardobr/cccat22_project/issues"
-  },
-  "homepage": "https://github.com/brunoleonardobr/cccat22_project#readme",
-  "dependencies": {
-    "@types/express": "^5.0.6",
-    "axios": "^1.13.6",
-    "express": "^5.2.1",
-    "jest": "^30.2.0",
-    "nodemon": "^3.1.14",
-    "pg-promise": "^12.6.1",
-    "ts-jest": "^29.4.6",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
-  },
-  "devDependencies": {
-    "@types/jest": "^30.0.0"
   }
 }
